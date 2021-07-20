@@ -17,7 +17,7 @@ class CreateShopsTable extends Migration
             $table->id()->comment('Identificador de la tienda');
             $table->string('name', 255)->comment('Nombre de la tienda');
             $table->string('direction', 255)->comment('Dirección de la tienda');
-            $table->integer('distance')->comment('Distancia a la que se encuentra la tienda en Km.');
+            $table->integer('distance')->comment('Distancia a la que se encuentra la tienda en m.');
             $table->timestamps();
         });
     }

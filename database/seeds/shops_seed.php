@@ -15,7 +15,7 @@ class shops_seed extends Seeder
             DB::table('shops')->insert(array(
                 'name'      => "Tienda ".$i,
                 'direction' => "Barcelona, Av. Diagonal núm ".$i,
-                'distance'  => rand(0, 20),
+                'distance'  => rand(1, 999),
                 'created_at' => DB::raw('CURRENT_TIMESTAMP')
             ));
         }
