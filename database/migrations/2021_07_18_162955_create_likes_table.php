@@ -13,7 +13,7 @@ class CreateLikesTable extends Migration
      */
     public function up()
     {
-        DB::statement("
+        /*DB::statement("
           CREATE TABLE `likes` (
             `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT 'Identificador de la tabla',
             `shop_id` BIGINT(20) NOT NULL COMMENT 'Identificador de la tienda',
@@ -23,7 +23,14 @@ class CreateLikesTable extends Migration
             INDEX `shops_id_unique` (`shop_id` ASC))
           COMMENT = 'Tabla de relación de \"me gusta\" de una tienda por parte de un usuario.',
           ENGINE = InnoDB;;
-        ");
+        ");*/
+        
+        Schema::create('likes', function (Blueprint $table) {
+            $table->id()->comment('Identificador de la tabla');
+            $table->integer('shop_id')->comment('Identificador de la tienda')->references('id')->on('shops');
+            $table->integer('user_id')->comment('Identificador del usuario')->references('id')->on('users');
+            $table->timestamps();
+        });
     }
 
     /**

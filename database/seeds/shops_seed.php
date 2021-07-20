@@ -11,7 +11,7 @@ class shops_seed extends Seeder
      */
     public function run()
     {
-        for($i=0; $i <= 20; $i++){
+        for($i=0; $i < 30; $i++){
             DB::table('shops')->insert(array(
                 'name'      => "Tienda ".$i,
                 'direction' => "Barcelona, Av. Diagonal núm ".$i,

@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 jul 2021, 21:44:42
+    Author     : David
+*/
+.icon{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.like{
+    background: url("../images/cart-check.svg") no-repeat;  
+    background-size: 22px;
+}
+.like:hover{
+    background: url("../images/cart-check-fill.svg") no-repeat; 
+    background-size: 22px;
+}
+.dislike{
+    background: url("../images/cart-check-fill.svg") no-repeat; 
+    background-size: 22px;
+}
+.dislike:hover{
+    background: url("../images/cart-check.svg") no-repeat;  
+    background-size: 22px;
+}
+.cart-x{
+    background: url("../images/cart-x.svg") no-repeat;  
+    background-size: 22px;
+}
+.cart-x:hover{
+    background: url("../images/cart-x-fill.svg") no-repeat;  
+    background-size: 22px;
+}

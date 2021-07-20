@@ -22,11 +22,14 @@
                   <td>{{$shop->name}}</td>
                   <td>{{$shop->direction}}</td>
                   <td>{{$shop->distance}} m</td>
-                  <td>Icon Like | Icon discard</td>
+                  <td> <div class="icon like" title="{{ __('Like') }}"></div><div class="icon cart-x" title="{{ __('Exclude store') }}"></div></td>
                 </tr>
                 @endforeach    
               </tbody>
             </table>
+            <!-- Páginación -->
+            <div class="clearfix"></div>
+            {{$shops->links()}}
         </div>
     </div>
 </div>

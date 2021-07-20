@@ -12,7 +12,7 @@ class ShopController extends Controller
     }
     
     public function index(){
-        $shops = DB::table('shops')->orderBy('distance', 'asc')->get();
+        $shops = DB::table('shops')->orderBy('distance', 'asc')->paginate(10);
         return view('shop.index', [
             'shops' => $shops
         ]);
