@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col col-md-12">
-            <h1>Listado de tiendas favoritas</h1>
+            <h1>Listado de tiendas</h1>
             <table class="table">
               <thead>
                 <tr>
@@ -21,8 +21,7 @@
                   <td>{{$shop->direction}}</td>
                   <td>{{$shop->distance}} m</td>
                   <td> 
-                      <div class="icon like" title="{{ __('Like') }}" data-id="{{ $shop->id }}" onclick="like(this)"></div>
-                      <!-- <div class="icon cart-x" title="{{ __('Exclude store') }}"></div> -->
+                      <div class="icon dislike" title="{{ __('Like') }}" data-id="{{ $shop->id }}" onclick="like(this)"></div>                      
                   </td>
                 </tr>
                 @endforeach    
