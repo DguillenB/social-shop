@@ -30,7 +30,7 @@ favoritas_
 <a name="technologies"></a>
 ## Tecnologías
 Los lenguajes y tecnologías empleados para el desarrollo de este software han sido:
-* Framework: Laravel 7
+* Framework Laravel 7
 * PHP 7.3.21
 * MySQL 5.7.31
 * HTML5
@@ -45,30 +45,32 @@ Este software ha sido desarrollado en un servidor con Apache v.2.4.46.
 ## Instalación
 
 Clona el respositorio o descarga las fuentes
-
+```
 git clone git@github.com:DguillenB/social-shop.git
-
-Ves al directorio de las fuentes y actualiza las dependencias usando composer
-
+```
+Posicionate en el directorio de las fuentes y **actualiza las dependencias** usando composer
+```
+cd [path directory]
 composer install
+```
+Haz una copia del archivo **.env.example** con el nombre de **.env** y actualizalo con los datos de la configuración.
 
-Haz una copia del archivo .env y actualizalo con los datos de la configuración.
-
-Genera una nueva application key y copialo en el archivo .env
-
+Genera una nueva **application key** y copialo en el archivo .env
+```
 php artisan key:generate
+```
+**Crea la base de datos** utilizada para el proyecto, nombre sugerido "socialshop", genera un usuario y contraseña y configura los datos relativos a la DB en el archivo .env
+- Nota: puedes utilizar el archivo database.sql de la distribución para la creación de la base de datos.
 
-Crea la base de datos utilizada para el proyecto, nombre sugerido "socialshop", genera un usuario y contraseña y configura los datos relativos a la DB en el archivo .env
-Nota: puedes utilizar el archivo database.sql de la distribución para la creación de la base de datos.
-
-Una vez este configurada la información de la base de datos en el archivo .env ejecuta las migraciones:
-
+Una vez este configurada la información de la base de datos en el archivo .env **ejecuta las migraciones**:
+```
 php artisan migrate
-
-Con el único objetivo de tener algunos datos de pruebas se puede ejecutar el seed para cargar algunas tiendas en la base de datos:
-
+```
+Con el único objetivo de tener algunos datos de pruebas se puede **ejecutar el seed** para cargar algunas tiendas en la base de datos:
+```
 php artisan make:seed shops_seed
-
+```
 Una vez realizada la instalación si accedes a: [URL Proyecto]/register podrás crearte un usuario de acceso a la aplicación.
 
-Para mas información sobre el deployment de Laravel 7 consultar: https://laravel.com/docs/7.x/deployment
+Para mas información sobre el deployment de Laravel 7 puedes consultar: 
+https://laravel.com/docs/7.x/deployment
