@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col col-md-12">
-            <h1>Listado de tiendas</h1>
+            <h1>{{ __('List of favorite shops') }}</h1>
             <table class="table">
               <thead>
                 <tr>
