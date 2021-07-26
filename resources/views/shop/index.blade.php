@@ -22,7 +22,7 @@
                   <td>{{$shop->distance}} m</td>
                   <td> 
                       <div class="icon like" title="{{ __('Like') }}" data-id="{{ $shop->id }}" onclick="like(this)"></div>
-                      <!-- <div class="icon cart-x" title="{{ __('Exclude store') }}"></div> -->
+                      <div class="icon cart-x" title="{{ __('Exclude store') }}" data-id="{{ $shop->id }}" onclick="exclude(this)"></div>
                   </td>
                 </tr>
                 @endforeach    

@@ -20,6 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/shops', 'ShopController@index')->name('shops');
+Route::get('/favorites', 'ShopController@favorites')->name('shops.favorites');
+
 Route::get('/like/{shop_id}', 'LikeController@like')->name('like.save');
 Route::get('/dislike/{shop_id}', 'LikeController@dislike')->name('like.delete');
-Route::get('/favorites', 'ShopController@favorites')->name('shops.favorites');
+
+Route::get('/exclude/{shop_id}', 'ExcludedController@excludeShop')->name('exclude.save');

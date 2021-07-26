@@ -36,3 +36,27 @@ function like(element){
         }
     });
 }
+/**
+ * Función para excluir una tienda.
+ * @param {type} element
+ * @returns {undefined}
+ */
+function exclude(element){
+    let aUrl = window.location.href.split("/");
+    let lastDirectory = aUrl[aUrl.length -1];
+    let url = window.location.href.replace("/"+lastDirectory,"") + "/exclude/";
+    
+    let idShop = $(element).attr("data-id");
+    
+    $.ajax({ 
+        url: url+idShop,
+        type: 'GET',
+        success: function(response){
+            if(response.excluded){
+                location.reload();
+            }else{
+                console.log("Ocurrió un error inesperado.");
+            }
+        }
+    });
+}
