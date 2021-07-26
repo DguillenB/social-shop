@@ -69,7 +69,7 @@ php artisan migrate
 ```
 Con el único objetivo de tener algunos datos de pruebas se puede **ejecutar el seed** para cargar algunas tiendas en la base de datos:
 ```
-php artisan make:seed shops_seed
+php artisan db:seed --class=shops_seed
 ```
 Una vez realizada la instalación si accedes a: [URL Proyecto]/register podrás crearte un usuario de acceso a la aplicación.
 
