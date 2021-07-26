@@ -21,11 +21,11 @@ ser añadida a la lista de mis tiendas favoritas_
 * _Nota: las tiendas favoritas no deben ser mostradas en la pantalla
 principal_
 #### _Elementos extra_
+* _[BONUS] Como usuario, puedo excluir una tienda, que no será mostrada
+en la lista de “Tiendas Cercanas” durante las siguientes dos horas_
 * _[BONUS] Como usuario, puedo listar la lista de tiendas favoritas_
 * _[BONUS] Como usuario, puedo eliminar una tienda de la lista de tiendas
 favoritas_
-* _[BONUS] Como usuario, puedo excluir una tienda, que no será mostrada
-en la lista de “Tiendas Cercanas” durante las siguientes dos horas_
 
 ***
 <a name="technologies"></a>
