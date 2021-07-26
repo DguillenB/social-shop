@@ -11,7 +11,7 @@ App para listar tiendas cercanas
 ### Información General
 El objetivo del ejercicio es implementar una app que liste tiendas cercanas
 
-#### _Requirements_
+#### _Especificaciones_
 * _Como un usuario, puedo registrarme usando mi email y contraseña_
 * _Como un usuario, puedo conectarme usando mi email y contraseña_
 * _Como un usuario, puedo mostrar el listado de tiendas ordenadas por
@@ -20,11 +20,11 @@ distancia_
 ser añadida a la lista de mis tiendas favoritas_
 * _Nota: las tiendas favoritas no deben ser mostradas en la pantalla
 principal_
-
+#### _Elementos extra_
 * _[BONUS] Como usuario, puedo listar la lista de tiendas favoritas_
 * _[BONUS] Como usuario, puedo eliminar una tienda de la lista de tiendas
 favoritas_
-*_[BONUS] Como usuario, puedo excluir una tienda, que no será mostrada
+* _[BONUS] Como usuario, puedo excluir una tienda, que no será mostrada
 en la lista de “Tiendas Cercanas” durante las siguientes dos horas_
 
 ***
