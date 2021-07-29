@@ -52,9 +52,6 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('shops') }}">{{ __('Nearby shops') }}</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('shops.favorites') }}">{{ __('Favorites Stores') }}</a>
                             </li>
                             <li class="nav-item dropdown">
